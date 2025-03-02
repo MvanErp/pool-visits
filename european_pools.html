@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7526cb3d00b1283ef9ffab22125fac23 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7526cb3d00b1283ef9ffab22125fac23" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7526cb3d00b1283ef9ffab22125fac23 = L.map(
+                "map_7526cb3d00b1283ef9ffab22125fac23",
+                {
+                    center: [48.8575, 2.3514],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1faee7a7872d154ef5d108d2d49ee4c7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var marker_172412fc8c84598626ccda42018ff275 = L.marker(
+                [48.849387820446324, 2.351593471263964],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_12b45852bca9c73b75877de06501b3c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_172412fc8c84598626ccda42018ff275.setIcon(icon_12b45852bca9c73b75877de06501b3c9);
+        
+    
+            marker_172412fc8c84598626ccda42018ff275.bindTooltip(
+                `<div>
+                     Espace Sportif Pontoise
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f7c32e49f0c19929c02ad74be7d30ac = L.marker(
+                [48.8832824634108, 2.3426694295852992],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_c8c8dc8802c5aea57ff520699dca6322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1f7c32e49f0c19929c02ad74be7d30ac.setIcon(icon_c8c8dc8802c5aea57ff520699dca6322);
+        
+    
+            marker_1f7c32e49f0c19929c02ad74be7d30ac.bindTooltip(
+                `<div>
+                     Piscine Georges Drigny
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_478869fcc459a0e776678bc4efce163f = L.marker(
+                [43.58965249312909, 7.1186805905361625],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_05f7f6139a617f921e8898ace8f3cb93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_478869fcc459a0e776678bc4efce163f.setIcon(icon_05f7f6139a617f921e8898ace8f3cb93);
+        
+    
+            marker_478869fcc459a0e776678bc4efce163f.bindTooltip(
+                `<div>
+                     Stade Nautique d'Antibes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6185c409cf9958c2f9efdab4022a2d32 = L.marker(
+                [46.05662043414956, 11.130652466794983],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_8dc4e2a9fec72d1b3534fc3dc65947a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6185c409cf9958c2f9efdab4022a2d32.setIcon(icon_8dc4e2a9fec72d1b3534fc3dc65947a9);
+        
+    
+            marker_6185c409cf9958c2f9efdab4022a2d32.bindTooltip(
+                `<div>
+                     Centro Sportivo G. Manazzon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c02a581d0944473c71dbb807d1a8c54 = L.marker(
+                [43.31200585182764, -2.00511338859131],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_2fff19614e1f95ca075fcd2e39d827c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1c02a581d0944473c71dbb807d1a8c54.setIcon(icon_2fff19614e1f95ca075fcd2e39d827c9);
+        
+    
+            marker_1c02a581d0944473c71dbb807d1a8c54.bindTooltip(
+                `<div>
+                     Bentaberri municipal sports centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_013ba46fe95931068ad7766e3036a3f4 = L.marker(
+                [43.28102808822085, -2.169282671447766],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_e46e21a195d3e8783a7d414382ead023 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_013ba46fe95931068ad7766e3036a3f4.setIcon(icon_e46e21a195d3e8783a7d414382ead023);
+        
+    
+            marker_013ba46fe95931068ad7766e3036a3f4.bindTooltip(
+                `<div>
+                     Zarauzko Udal Kiroldegia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a8ad60b670a8b9af6c99561b51838f8 = L.marker(
+                [48.17445050327382, 16.378911049075853],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_c49ec742436c367c24ee0708c290e930 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9a8ad60b670a8b9af6c99561b51838f8.setIcon(icon_c49ec742436c367c24ee0708c290e930);
+        
+    
+            marker_9a8ad60b670a8b9af6c99561b51838f8.bindTooltip(
+                `<div>
+                     Amalienbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecec2d39770537dcac4b0c765f0aad0f = L.marker(
+                [48.22179302085267, 16.312229814718066],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_ba97991bfc88f171c2467e5220a9710c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ecec2d39770537dcac4b0c765f0aad0f.setIcon(icon_ba97991bfc88f171c2467e5220a9710c);
+        
+    
+            marker_ecec2d39770537dcac4b0c765f0aad0f.bindTooltip(
+                `<div>
+                     Kongreßbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_482a070fd66c8ece140832ab670d36c4 = L.marker(
+                [49.61138832558482, 6.9722366409625],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_6c8024478f77dc7cca30ff54bba30cc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_482a070fd66c8ece140832ab670d36c4.setIcon(icon_6c8024478f77dc7cca30ff54bba30cc9);
+        
+    
+            marker_482a070fd66c8ece140832ab670d36c4.bindTooltip(
+                `<div>
+                     Hallenbad Nonnweiler
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a08c248c975c65d8189717c2c1d6fe66 = L.marker(
+                [51.56876218150824, 4.643675924235699],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_9f40efdb82fcc61efdf72ec37d660cdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a08c248c975c65d8189717c2c1d6fe66.setIcon(icon_9f40efdb82fcc61efdf72ec37d660cdb);
+        
+    
+            marker_a08c248c975c65d8189717c2c1d6fe66.bindTooltip(
+                `<div>
+                     De Banakker
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f42f7f13da6ff6302c4d15ef5800cd6 = L.marker(
+                [51.53779983627788, 4.574182074184856],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_7da2dcd41bd8eb8cd5548760d351bc15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0f42f7f13da6ff6302c4d15ef5800cd6.setIcon(icon_7da2dcd41bd8eb8cd5548760d351bc15);
+        
+    
+            marker_0f42f7f13da6ff6302c4d15ef5800cd6.bindTooltip(
+                `<div>
+                     De Vijfsprong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8d507c46549c5f734b395e266c082df = L.marker(
+                [51.534217182887346, 4.430834568361941],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_fa9bfb259796fc629527044bbdbca58f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b8d507c46549c5f734b395e266c082df.setIcon(icon_fa9bfb259796fc629527044bbdbca58f);
+        
+    
+            marker_b8d507c46549c5f734b395e266c082df.bindTooltip(
+                `<div>
+                     De Stok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fca85a714f0a4857b767c7ee426a2c4a = L.marker(
+                [51.46506557178827, 4.66406674583649],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_267f4aede1d22d7dbb7f1742173326c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fca85a714f0a4857b767c7ee426a2c4a.setIcon(icon_267f4aede1d22d7dbb7f1742173326c2);
+        
+    
+            marker_fca85a714f0a4857b767c7ee426a2c4a.bindTooltip(
+                `<div>
+                     De Wildert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_445a28e67b13286e79633816a5c52d23 = L.marker(
+                [51.41672491080456, 5.478220910684145],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_c3b8971d9380a9f645b0687b600f375a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_445a28e67b13286e79633816a5c52d23.setIcon(icon_c3b8971d9380a9f645b0687b600f375a);
+        
+    
+            marker_445a28e67b13286e79633816a5c52d23.bindTooltip(
+                `<div>
+                     De Tongelreep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7547b3c50609a9a3cd87b130c60f98d3 = L.marker(
+                [53.26578560512625, -4.316517195388435],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_65f5a71672e5808cbe754ed3355d49ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7547b3c50609a9a3cd87b130c60f98d3.setIcon(icon_65f5a71672e5808cbe754ed3355d49ad);
+        
+    
+            marker_7547b3c50609a9a3cd87b130c60f98d3.bindTooltip(
+                `<div>
+                     Plas Arthur Leisure Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68a16f861f6ae1ce46483ceaf526f11f = L.marker(
+                [51.51867431067368, -0.12505424799819137],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_9d64470654be4444cde99ca9400e08b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_68a16f861f6ae1ce46483ceaf526f11f.setIcon(icon_9d64470654be4444cde99ca9400e08b7);
+        
+    
+            marker_68a16f861f6ae1ce46483ceaf526f11f.bindTooltip(
+                `<div>
+                     Oasis Sports Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35304d9f3b3bf398391d1d88cfaa6872 = L.marker(
+                [52.365059958998536, 4.953159650018758],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_a51a09c272e31eb2216741f50453447a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_35304d9f3b3bf398391d1d88cfaa6872.setIcon(icon_a51a09c272e31eb2216741f50453447a);
+        
+    
+            marker_35304d9f3b3bf398391d1d88cfaa6872.bindTooltip(
+                `<div>
+                     Flevoparkbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffeef4d0c28fbd2684b7958b109054c4 = L.marker(
+                [52.338863431600444, 4.902264005193505],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_9ee8cfdba70b0ca299b69cdd0dfb32c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ffeef4d0c28fbd2684b7958b109054c4.setIcon(icon_9ee8cfdba70b0ca299b69cdd0dfb32c1);
+        
+    
+            marker_ffeef4d0c28fbd2684b7958b109054c4.bindTooltip(
+                `<div>
+                     De Mirandabad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72b3bd2e9c6fb70c6d63c88b28759f88 = L.marker(
+                [52.37813465991695, 4.878440012588956],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_7eef5153eefbe27ed53a926464073740 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_72b3bd2e9c6fb70c6d63c88b28759f88.setIcon(icon_7eef5153eefbe27ed53a926464073740);
+        
+    
+            marker_72b3bd2e9c6fb70c6d63c88b28759f88.bindTooltip(
+                `<div>
+                     Het Marnix
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_054ba5c0dc3d0b499b41f30bdf165bb4 = L.marker(
+                [52.39836477863306, 4.917735334808182],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_5b1cb74829f4e1054f2d4f2838e8720f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_054ba5c0dc3d0b499b41f30bdf165bb4.setIcon(icon_5b1cb74829f4e1054f2d4f2838e8720f);
+        
+    
+            marker_054ba5c0dc3d0b499b41f30bdf165bb4.bindTooltip(
+                `<div>
+                     Noorderparkbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2881ba95c6356110574d66cc004a3144 = L.marker(
+                [52.358747681778546, 4.886061441423235],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_bdebe46ecacbccde5aed4a70475c0fbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2881ba95c6356110574d66cc004a3144.setIcon(icon_bdebe46ecacbccde5aed4a70475c0fbb);
+        
+    
+            marker_2881ba95c6356110574d66cc004a3144.bindTooltip(
+                `<div>
+                     Zuiderbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa24fac2ab3d853a9a51442f47a5c95d = L.marker(
+                [52.37027298323383, 4.818018370259431],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_57b0349c96a13f8e332d4cb58636e764 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fa24fac2ab3d853a9a51442f47a5c95d.setIcon(icon_57b0349c96a13f8e332d4cb58636e764);
+        
+    
+            marker_fa24fac2ab3d853a9a51442f47a5c95d.bindTooltip(
+                `<div>
+                     Sloterparkbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86765677e55edce2341e4b06a8ae4511 = L.marker(
+                [52.35687629346748, 4.928454424546742],
+                {}
+            ).addTo(map_7526cb3d00b1283ef9ffab22125fac23);
+        
+    
+            var icon_67062652bd9576c0b26b21ab4ccaa640 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-person-swimming", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_86765677e55edce2341e4b06a8ae4511.setIcon(icon_67062652bd9576c0b26b21ab4ccaa640);
+        
+    
+            marker_86765677e55edce2341e4b06a8ae4511.bindTooltip(
+                `<div>
+                     Sportfondsenbad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
